@@ -1,5 +1,5 @@
 sys_name = "XSS'OR"
-sys_copyright = "@evilcos.me"
+sys_copyright = "@danta"
 
 def sys(req):
     return {
