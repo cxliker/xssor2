@@ -106,12 +106,12 @@ function my_format(txt,compress/*是否为压缩模式*/){/* 格式化JSON源码
         var indentChar = '    ';
         if(/^\s*$/.test(txt)){
             // alert('数据为空,无法格式化! ');
-            return '';
+            return txt;
         }
         try{var data=eval('('+txt+')');}
         catch(e){
             alert('数据源语法错误,格式化失败! 错误信息: '+e.description,'err');
-            return '';
+            return txt;
         };
         var draw=[],last=false,This=this,line=compress?'':'\n',nodeCount=0,maxDepth=0;
 
