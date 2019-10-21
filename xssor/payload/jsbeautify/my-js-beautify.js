@@ -153,10 +153,9 @@ function check()
                 return false;
             }
         } catch(e) {
-            alert('error：'+str+'!!!'+e);
+            alert('error：'+'!!!'+e);
             return false;
         }
-    isJson(source);
 }
 
 function ugly()
